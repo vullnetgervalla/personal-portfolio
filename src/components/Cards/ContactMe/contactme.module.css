@@ -88,8 +88,10 @@
     margin-bottom: 2rem;
     font-size: 1.5rem;
     background-color: #efefef;
+    color: black;
     border-radius: 10px;
     border-width: 1px;
+    border: 1px solid black;
 }
 
 .formContainer>button:hover {
@@ -129,4 +131,14 @@
 
 .formContainerDarkMode>button:hover {
     background-color: #0000b4;
+}
+
+@media (max-width: 600px) {
+    .form {
+        width: 100%;
+    }
+
+    .formContainer> :first-child {
+        margin-top: 0;
+    }
 }

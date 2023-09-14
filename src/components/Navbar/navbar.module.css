@@ -93,3 +93,31 @@
 .circleDarkMode {
     background-color: black;
 }
+
+@media (max-width: 600px) {
+    .navbar {
+        font-size: 0.7rem;
+        justify-content: space-between;
+    }
+
+    .link {
+        font-size: 0.7rem;
+        padding: 0 0.4rem;
+    }
+
+    .leftSpace {
+        flex: none;
+    }
+
+    .themeSlider {
+        margin-left: 1rem;
+    }
+
+    .navbar>h2 {
+        flex: none;
+    }
+
+    .menu {
+        flex: none;
+    }
+}
