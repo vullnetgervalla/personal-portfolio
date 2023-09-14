@@ -24,14 +24,6 @@ export default function NavBar(props) {
         }
     })
 
-    function scrollToSection(sectionId) {
-        console.log(sectionId)
-        const section = document.getElementById(sectionId);
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
-    }
-
     return (
         <nav className={`${styles.navbar}${props.darkMode ? ' ' + styles.darkMode : ""}`}>
             <div className={styles.leftSpace}>
