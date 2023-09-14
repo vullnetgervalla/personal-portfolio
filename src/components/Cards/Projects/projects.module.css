@@ -1,0 +1,146 @@
+.card {
+    width: 100vw;
+    max-width: 100%;
+    min-height: 100vh;
+    position: sticky;
+    display: flex;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 20 20'%3E%3Ccircle cx='5' cy='5' r='2' fill='%23d3d3d3' /%3E%3C/svg%3E") repeat;
+    background-color: white;
+}
+
+.cardDarkMode {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 20 20'%3E%3Ccircle cx='5' cy='5' r='2' fill='%233d3d3d' /%3E%3C/svg%3E") repeat;
+    background-color: black;
+    color: white;
+}
+
+.sideContainer {
+    flex: 1;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: sticky;
+    text-align: center;
+}
+
+.projects {
+    background-color: #ffffff88;
+    flex: 3;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projectsDarkMode {
+    background-color: #00000088;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+}
+
+.description {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.githubIcon {
+    width: 4rem;
+}
+
+.iconDarkMode {
+    filter: invert(63%) sepia(4%) saturate(0%) hue-rotate(167deg) brightness(84%) contrast(100%);
+}
+
+.projectCardDarkMode:hover .iconDarkMode {
+    filter: invert(100%) sepia(5%) saturate(0%) hue-rotate(345deg) brightness(107%) contrast(100%);
+}
+
+.githubLink {
+    color: inherit;
+    text-decoration: inherit;
+    display: flex;
+    width: 100%;
+    padding: 0.5rem 0;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
+.githubIcon.iconDarkMode {
+    filter: invert(100%) sepia(5%) saturate(0%) hue-rotate(345deg) brightness(107%) contrast(100%);
+}
+
+.githubLink:hover {
+    background-color: #aaaaaa88;
+}
+
+.projectCard {
+    min-height: 15rem;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid black;
+    background-color: #00000011;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.projectCard:first-child {
+    border-top: none;
+}
+
+.projectCardDarkMode {
+    border: none;
+    color: #ffffff88
+}
+
+.projectCardDarkMode:hover {
+    color: white;
+}
+
+.projectCard:hover {
+    background-color: transparent;
+}
+
+.projectContent {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+}
+
+.projectTitle {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.projectDescription {
+    font-size: 1.3rem;
+}
+
+.projectLink {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectLink>a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkIcon {
+    width: 5rem;
+}

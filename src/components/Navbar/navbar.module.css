@@ -1,0 +1,95 @@
+.navbar {
+    background-color: rgb(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: transform 0.2s linear;
+}
+
+.navbar.offScreen {
+    transform: translateY(-100%);
+}
+
+.leftSpace {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.navbar>h2 {
+    margin: 0.6rem;
+    flex: 1;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    flex: 1;
+    justify-content: right;
+}
+
+.menu>div {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 100%;
+    cursor: pointer;
+}
+
+.menu>div:hover {
+    background-color: #aaaaaa88;
+
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+.darkMode {
+    color: white;
+    background-color: #00000088;
+}
+
+.themeSlider {
+    margin-left: 4rem;
+    width: 3rem;
+    height: 1.5rem;
+    border-radius: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: 1px solid white;
+    box-shadow: inset;
+}
+
+.themeSlider:hover {
+    cursor: pointer;
+}
+
+.sliderDarkMode {
+    justify-content: right;
+    background-color: white;
+}
+
+.themeCircle {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.circleDarkMode {
+    background-color: black;
+}
